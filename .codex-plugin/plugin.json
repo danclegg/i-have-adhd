@@ -6,8 +6,8 @@
     "name": "Ayoub G.",
     "url": "https://github.com/ayghri"
   },
-  "homepage": "https://github.com/ayghri/i-have-adhd",
-  "repository": "https://github.com/ayghri/i-have-adhd",
+  "homepage": "https://github.com/danclegg/i-have-adhd",
+  "repository": "https://github.com/danclegg/i-have-adhd",
   "license": "MIT",
   "keywords": [
     "adhd",
@@ -26,7 +26,7 @@
     "capabilities": [
       "Instructions"
     ],
-    "websiteURL": "https://github.com/ayghri/i-have-adhd",
+    "websiteURL": "https://github.com/danclegg/i-have-adhd",
     "defaultPrompt": [
       "Use i-have-adhd for this task.",
       "Make this answer action-first and easy to execute.",

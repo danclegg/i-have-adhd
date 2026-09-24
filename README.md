@@ -5,7 +5,7 @@
   <strong align="center">ADHD-friendly outputs. No ADHD diagnosis needed!</strong>
 </p>
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/ayghri/i-have-adhd?style=flat" alt="License"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/danclegg/i-have-adhd?style=flat" alt="License"></a>
 </p>
 
 <p align="center">

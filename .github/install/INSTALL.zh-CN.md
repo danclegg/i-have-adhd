@@ -6,7 +6,7 @@
 ### 安装
 
 ```bash
-agy plugin install https://github.com/ayghri/i-have-adhd
+agy plugin install https://github.com/danclegg/i-have-adhd
 ```
 
 ### 验证
@@ -19,7 +19,7 @@ agy plugin list
 
 ```bash
 agy plugin uninstall i-have-adhd
-agy plugin install https://github.com/ayghri/i-have-adhd
+agy plugin install https://github.com/danclegg/i-have-adhd
 ```
 
 ### 卸载
@@ -66,7 +66,7 @@ AstronClaw 支持将 Markdown 文件导入为自定义技能。此方式使用�
 
 ### 安装
 
-1. 下载[技能源文件 SKILL.md](https://raw.githubusercontent.com/ayghri/i-have-adhd/main/skills/i-have-adhd/SKILL.md)，保存为 `SKILL.md`，上传前先阅读文件内容。
+1. 下载[技能源文件 SKILL.md](https://raw.githubusercontent.com/danclegg/i-have-adhd/main/skills/i-have-adhd/SKILL.md)，保存为 `SKILL.md`，上传前先阅读文件内容。
 2. 在 AstronClaw 中打开**我的技能**，选择**新建**，上传该 `.md` 文件。
 3. 确认导入后的技能名称为 `i-have-adhd`，通过**启用/禁用**控制技能是否可用。
 
@@ -114,7 +114,7 @@ AstronClaw 支持指定调用和自动调用技能。官方指南未说明是否
 ### 安装
 
 ```bash
-claude plugin marketplace add ayghri/i-have-adhd
+claude plugin marketplace add danclegg/i-have-adhd
 claude plugin install i-have-adhd@i-have-adhd
 ```
 
@@ -172,7 +172,7 @@ rm ~/.claude/.i-have-adhd-always
 ### 安装
 
 ```bash
-codex plugin marketplace add ayghri/i-have-adhd --ref main
+codex plugin marketplace add danclegg/i-have-adhd --ref main
 codex plugin add i-have-adhd@i-have-adhd
 ```
 
@@ -233,7 +233,7 @@ Gemini CLI 没有插件市场，因此有两种原生方式：**自定义命令*
 
 ```bash
 mkdir -p ~/.gemini/commands
-curl -fsSL https://raw.githubusercontent.com/ayghri/i-have-adhd/main/skills/i-have-adhd/agents/gemini.toml \
+curl -fsSL https://raw.githubusercontent.com/danclegg/i-have-adhd/main/skills/i-have-adhd/agents/gemini.toml \
   -o ~/.gemini/commands/i-have-adhd.toml
 ```
 
@@ -242,7 +242,7 @@ curl -fsSL https://raw.githubusercontent.com/ayghri/i-have-adhd/main/skills/i-ha
 ### 安装（扩展方式，始终启用）
 
 ```bash
-gemini extensions install https://github.com/ayghri/i-have-adhd
+gemini extensions install https://github.com/danclegg/i-have-adhd
 ```
 
 扩展会加载导入完整技能的 `GEMINI.md`，因此规则从第一条消息起生效。必须安装 `git`。
@@ -280,14 +280,14 @@ Copilot 原生读取 Agent Skills：直接使用同一个 `SKILL.md`，无需转
 ### 安装
 
 ```bash
-npx skills add ayghri/i-have-adhd -a github-copilot        # 此项目
-npx skills add ayghri/i-have-adhd -a github-copilot -g     # 所有项目
+npx skills add danclegg/i-have-adhd -a github-copilot        # 此项目
+npx skills add danclegg/i-have-adhd -a github-copilot -g     # 所有项目
 ```
 
 不使用 CLI 时，将技能文件夹复制到 Copilot 扫描的任一目录：
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/danclegg/i-have-adhd
 mkdir -p ~/.copilot/skills
 cp -R i-have-adhd/skills/i-have-adhd ~/.copilot/skills/
 ```
@@ -319,7 +319,7 @@ npx skills remove i-have-adhd
 
 ### 启用说明
 
-Copilot 遵循 `disable-model-invocation`：与 Claude Code 相同，在调用技能前不会应用任何规则（已在 [#60](https://github.com/ayghri/i-have-adhd/pull/60) 中测试）。
+Copilot 遵循 `disable-model-invocation`：与 Claude Code 相同，在调用技能前不会应用任何规则（已在 [#60](https://github.com/danclegg/i-have-adhd/pull/60) 中测试）。
 
 ### 始终启用（可选）
 
@@ -352,7 +352,7 @@ Copilot 遵循 `disable-model-invocation`：与 Claude Code 相同，在调用�
 ### 安装
 
 ```bash
-hermes skills install ayghri/i-have-adhd/skills/i-have-adhd
+hermes skills install danclegg/i-have-adhd/skills/i-have-adhd
 ```
 
 输入 `/i-have-adhd`。技能会安装到 `~/.hermes/skills/`，并在下次会话启动时作为斜杠命令生效。
@@ -360,9 +360,9 @@ hermes skills install ayghri/i-have-adhd/skills/i-have-adhd
 想先浏览内容？将此仓库添加为技能源（“tap”），然后搜索并安装：
 
 ```bash
-hermes skills tap add ayghri/i-have-adhd
+hermes skills tap add danclegg/i-have-adhd
 hermes skills search adhd
-hermes skills install ayghri/i-have-adhd/skills/i-have-adhd
+hermes skills install danclegg/i-have-adhd/skills/i-have-adhd
 ```
 
 ### 验证
@@ -383,7 +383,7 @@ hermes skills update i-have-adhd
 hermes skills uninstall i-have-adhd
 ```
 
-也可以同时删除 tap：`hermes skills tap remove ayghri/i-have-adhd`。
+也可以同时删除 tap：`hermes skills tap remove danclegg/i-have-adhd`。
 
 ### 始终启用（可选）
 
@@ -419,7 +419,7 @@ hermes skills uninstall i-have-adhd
 
 1. 输入 `/plugins`。
 2. 选择 **Custom**。
-3. 粘贴 `https://github.com/ayghri/i-have-adhd` 并 Enter。
+3. 粘贴 `https://github.com/danclegg/i-have-adhd` 并 Enter。
 4. 选择 **Trust and install**。
 
 使用斜杠命令 `/skill:i-have-adhd` 显式调用此技能。
@@ -445,7 +445,7 @@ OpenCode 将此仓库作为服务端插件加载：`.opencode/plugins/i-have-adh
 克隆仓库并让 OpenCode 指向该插件。使用绝对路径可以让所有项目共享同一份检出：
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd ~/.config/opencode/vendor/i-have-adhd
+git clone https://github.com/danclegg/i-have-adhd ~/.config/opencode/vendor/i-have-adhd
 ```
 
 将以下内容加入你的 `opencode.json`（全局：`~/.config/opencode/opencode.json`）：
@@ -501,7 +501,7 @@ Pi 将此仓库识别为原生包：`extensions/` 提供会话级持久模式，
 ### 安装
 
 ```bash
-pi install https://github.com/ayghri/i-have-adhd
+pi install https://github.com/danclegg/i-have-adhd
 ```
 
 开启新的 Pi 会话，为当前会话切换 ADHD 友好输出：
@@ -543,7 +543,7 @@ pi list
 ### 更新
 
 ```bash
-pi update https://github.com/ayghri/i-have-adhd
+pi update https://github.com/danclegg/i-have-adhd
 ```
 
 或使用 `pi update --extensions` 更新所有未固定版本的 Pi 包。
@@ -551,7 +551,7 @@ pi update https://github.com/ayghri/i-have-adhd
 ### 卸载
 
 ```bash
-pi remove https://github.com/ayghri/i-have-adhd
+pi remove https://github.com/danclegg/i-have-adhd
 ```
 
 ### 始终启用（可选）
@@ -597,7 +597,7 @@ rm ~/.pi/agent/.i-have-adhd-always
 ### 安装
 
 ```bash
-omp plugin marketplace add ayghri/i-have-adhd
+omp plugin marketplace add danclegg/i-have-adhd
 omp plugin install --scope user i-have-adhd@i-have-adhd
 ```
 
@@ -626,7 +626,7 @@ omp plugin marketplace remove i-have-adhd
 ### 安装
 
 ```bash
-qwen extensions install ayghri/i-have-adhd
+qwen extensions install danclegg/i-have-adhd
 ```
 
 Qwen Code 支持 GitHub 短路径，并可将该仓库安装为原生扩展。扩展会发现 `skills/` 下的技能。
@@ -671,7 +671,7 @@ Zed 的 Agent 原生读取 Agent Skills：直接使用同一个 `SKILL.md`，无
 在 Agent Panel 中打开 Skills 管理器，选择 **Create skill from URL**（命令面板中为 `agent: create skill from url`），然后粘贴：
 
 ```
-https://github.com/ayghri/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md
+https://github.com/danclegg/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md
 ```
 
 要用于所有项目，请保存到 **User** 作用域；仅用于一个项目则保存到 **Project** 作用域。然后在 Agent Panel 中输入 `/i-have-adhd`。
@@ -679,7 +679,7 @@ https://github.com/ayghri/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md
 偏好文件系统方式？克隆仓库并将技能文件夹放入用户 skills 目录：
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/danclegg/i-have-adhd
 mkdir -p ~/.agents/skills
 cp -R i-have-adhd/skills/i-have-adhd ~/.agents/skills/
 ```
@@ -729,10 +729,10 @@ cp -R i-have-adhd/skills/i-have-adhd ~/.agents/skills/
 ### 安装
 
 ```bash
-npx skills add ayghri/i-have-adhd                  # 当前项目
-npx skills add ayghri/i-have-adhd -g               # 所有项目
-npx skills add ayghri/i-have-adhd -a cursor -y     # 仅一个智能体
-npx skills add ayghri/i-have-adhd -a opencode -y
+npx skills add danclegg/i-have-adhd                  # 当前项目
+npx skills add danclegg/i-have-adhd -g               # 所有项目
+npx skills add danclegg/i-have-adhd -a cursor -y     # 仅一个智能体
+npx skills add danclegg/i-have-adhd -a opencode -y
 ```
 
 开启新的智能体聊天并输入 `/i-have-adhd`。
@@ -740,7 +740,7 @@ npx skills add ayghri/i-have-adhd -a opencode -y
 不使用 CLI 时，将技能文件夹复制到智能体扫描的路径：
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/danclegg/i-have-adhd
 mkdir -p ~/.cursor/skills     # Cursor。OpenCode 使用 .agents/skills，其他智能体使用其自身路径
 cp -R i-have-adhd/skills/i-have-adhd ~/.cursor/skills/
 ```
