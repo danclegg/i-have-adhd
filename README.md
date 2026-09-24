@@ -27,8 +27,15 @@
 Copy/paste into your CLI prompt:
 
 ```text
-Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd, refer to the repo's AGENTS.md for instructions.
+Install the i-have-adhd skill/plugin from https://github.com/danclegg/i-have-adhd, refer to the repo's AGENTS.md for instructions.
 ```
+<details>
+  <summary>Original snippet</summary>
+  ```text
+  Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd, refer to the repo's AGENTS.md for instructions.
+  ```
+
+</details>
 
 Or 🔗 [check the installation instructions](INSTALL.md).
 
